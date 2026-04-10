@@ -3,4 +3,8 @@ module.exports = (req, res) => {
         message: "API online",
         salutation: "Oiii pedo fedido"
     });
+
+    return res.status(404).json({
+        message: "API não encontrada!"
+    })
 }
